@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdul Rehman | Digital Identity</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+        }
+
+        body {
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 420px;
+            height: 90vh;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.8s ease, box-shadow 0.8s ease;
+            transform-style: preserve-3d;
+            animation: floatCard 8s ease-in-out infinite;
+            overflow-y: auto;
+        }
+
+        .container:hover {
+            transform: rotateY(5deg) rotateX(5deg);
+            box-shadow: 0 30px 80px rgba(0, 255, 255, 0.3);
+        }
+
+        @keyframes floatCard {
+            0% {
+                transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg);
+            }
+
+            25% {
+                transform: translate(5px, -5px) rotateX(2deg) rotateY(2deg);
+            }
+
+            50% {
+                transform: translate(0px, 5px) rotateX(0deg) rotateY(0deg);
+            }
+
+            75% {
+                transform: translate(-5px, -5px) rotateX(-2deg) rotateY(-2deg);
+            }
+
+            100% {
+                transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg);
+            }
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1664575602276-acd073f104c1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YnVzaW5lc3N8ZW58MHx8MHx8fDA%3D') no-repeat center center/cover;
+            opacity: 0.05;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #00e0ff;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 15px;
+            color: #f0f0f0;
+            border-left: 4px solid #00e0ff;
+            padding-left: 12px;
+        }
+
+        p,
+        ul li {
+            font-size: 0.85rem;
+            line-height: 1.4;
+            margin: 6px 0;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 0.85rem;
+            margin: 12px 0;
+            color: #d0f0ff;
+            border-left: 4px solid #00e0ff;
+            padding-left: 12px;
+        }
+
+        ul {
+            margin-left: 16px;
+        }
+
+        .contact a {
+            color: #00e0ff;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 0;
+            font-size: 0.85rem;
+        }
+
+        .tagline {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #90e0ef;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .profile-pic {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 15px;
+            display: block;
+            box-shadow: 0 0 10px #00e0ff80;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://yt3.ggpht.com/f5TQbGoOGS_7uCi3r1cE5EWJ_9YhjM9ZYfz65psLJuF3aqANmi4-lsRNOBwpZlkaxpS3SBS9=s108-c-k-c0x00ffffff-no-rj"
+            alt="Abdul Rehman" class="profile-pic">
+        <h1>Abdul Rehman</h1>
+        <div class="tagline">Entrepreneur • Software Engineer • Trader </div>
+
+        <p><strong>Founder & CEO – AR Softech , Sheikh RealEstate</strong><br>
+        </p>
+
+        <h2>About Me</h2>
+        <p>I am Abdul Rehman — a new-generation entrepreneur merging technology, creativity, and business into one
+            unified journey. I don't just code or trade — I create and lead.</p>
+
+        <div class="quote">
+            "I feel incomplete until my success earns me respect and takes me to the one I love more than myself."
+        </div>
+
+        <h2>Education</h2>
+        <ul>
+            <li>DAE in Software Development</li>
+            <li>Bachelor's in Cyber Security (In Progress)</li>
+            <li>DAE in MERN STACK</li>
+            <li>DAE in Front-End Development</li>
+            <li>DAE in Microsoft Office</li>
+            <li>Navttc D in E-Commerce & Marketing</li>
+            <li>Self-taught through real-world projects</li>
+        </ul>
+
+        <h2>Professional Roles</h2>
+        <ul>
+            <li>Founder & CEO – AR Softech , Sheikh RealEstate</li>
+            <li>CS Teacher – Virtual Institute By AR SOFTECH, Islamabad</li>
+        </ul>
+
+        <h2>Skills</h2>
+        <ul>
+            <li>Full-stack Web Dev</li>
+            <li>UI/UX Design</li>
+            <li>Social Media Strategy</li>
+            <li>Marketing Strategy</li>
+            <li>Technical Leadership</li>
+            <li>Trading – </li>
+        </ul>
+
+        <h2>Time Commitment</h2>
+        <p>Avg. <strong>14 hrs/day</strong> – total of <strong>98+ hrs/week</strong>. For Appointment Contact</p>
+
+        <h2>Contact</h2>
+        <div class="contact">
+            <a href="https://wa.me/923130094251">📱 WhatsApp</a><br>
+            <a href="mailto:mr.rehman0777@gmail.com">✉️ Email</a><br>
+            <a href="https://instagram.com/abdulrehman_3825">📸 Instagram</a><br>
+            <a href="https://arsoftech.netlify.app">🌐 Website</a>
+        </div>
+    </div>
+</body>
+
+</html>
